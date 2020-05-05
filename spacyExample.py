@@ -118,7 +118,7 @@ def main(input_file, output_file):
 
 
     ## The Large pretrained english model is loaded
-    nlp = spacy.load('en_core_web_lg')  # create blank Language class
+    nlp = spacy.load('en_core_web_lg')
     ## Task Named Entity Recognizer is added into the pipeline
     if 'ner' not in nlp.pipe_names:
         ner = nlp.create_pipe('ner')
